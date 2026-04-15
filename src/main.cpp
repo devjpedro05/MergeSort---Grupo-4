@@ -101,7 +101,7 @@ void mergeSortLista(No*& cabeca) {
     cabeca = intercalarListasOrdenadas(frente, tras);
 }
 
-// Libera toda a memoria alocada para a lista.
+// Libera toda a memória alocada para a lista.
 void liberarLista(No*& cabeca) {
     while (cabeca != nullptr) {
         No* temporario = cabeca;
@@ -113,7 +113,7 @@ void liberarLista(No*& cabeca) {
 int main() {
     No* lista = nullptr;
 
-    // Insercao manual de valores para demonstracao.
+    // Inserção manual de valores para demonstração.
     inserirNoFinal(lista, 42);
     inserirNoFinal(lista, 7);
     inserirNoFinal(lista, 19);
