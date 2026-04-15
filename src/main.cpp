@@ -113,15 +113,24 @@ void liberarLista(No*& cabeca) {
 int main() {
     No* lista = nullptr;
 
-    // Inserção manual de valores para demonstração.
-    inserirNoFinal(lista, 42);
-    inserirNoFinal(lista, 7);
-    inserirNoFinal(lista, 19);
-    inserirNoFinal(lista, 3);
-    inserirNoFinal(lista, 25);
-    inserirNoFinal(lista, 11);
-    inserirNoFinal(lista, 30);
+    int n;
+    cout << "Digite a quantidade de valores a inserir (ex: 100, 1000, 10000, 100000): ";
+    cin >> n;
 
+    if (n <= 0) {
+        cout << "Quantidade invalida.\n";
+        return 1;
+    }
+
+    cout << "Digite " << n << " valores (inteiros), separados por espaco ou quebra de linha:\n";
+    for (int i = 0; i < n; i++) {
+        int valor;
+        cin >> valor;
+        inserirNoFinal(lista, valor);
+    }
+
+    // Para N muito grande (10000/100000), imprimir tudo fica inviavel.
+    // Se quiser, comente as linhas abaixo.
     cout << "Lista original: ";
     imprimirLista(lista);
 
