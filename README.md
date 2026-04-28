@@ -32,14 +32,17 @@ Em listas encadeadas, essa abordagem é eficiente porque a intercalação pode s
 
 ## Compilação
 Primeiro, é preciso gerar os arquivos de teste com gerar_vetores.cpp:
+
 g++ -std=c++17 -Wall -Wextra -pedantic gerar_vetores.cpp -o gerar_vetores
 ./gerar_vetores
 
 Em seguida, compile o programa principal:
+
 g++ -std=c++17 -Wall -Wextra -pedantic main.cpp -o mergesort_lista
 
 ## Execução
 Após compilar, execute:
+
 ./mergesort_lista
 
 O programa exibirá um menu com duas opções:
