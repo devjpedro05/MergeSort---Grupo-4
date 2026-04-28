@@ -197,7 +197,7 @@ void executarTeste(const string& nomeCaso, const string& nomeArquivo) {
 
 // Menu de teste automatico com os 3 casos.
 void menuTeste() {
-    cout << "\n--- MODO TESTE AUTOMATICO ---\n";
+    cout << "\n   MODO TESTE AUTOMATICO  \n";
     executarTeste("Melhor Caso",    "melhor_caso_10.txt");
     executarTeste("Pior Caso",      "pior_caso_10.txt");
     executarTeste("Quase Ordenado", "quase_ordenado_10.txt");
@@ -209,7 +209,7 @@ void menuManual() {
     int opcao;
 
     do {
-        cout << "\n--- MODO MANUAL ---\n";
+        cout << "\n   MODO MANUAL   \n";
         cout << "1. Inserir valor\n";
         cout << "2. Imprimir lista\n";
         cout << "3. Ordenar lista (Merge Sort)\n";
@@ -285,7 +285,7 @@ int main() {
     int opcao;
 
     do {
-        cout << "\n====== MENU PRINCIPAL ======\n";
+        cout << "\n      MENU PRINCIPAL \n";
         cout << "1. Teste automatico (melhor, pior e quase ordenado)\n";
         cout << "2. Inserir elementos manualmente\n";
         cout << "0. Sair\n";
