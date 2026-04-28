@@ -90,7 +90,7 @@ Adriano - Criação e execução do código
 
 João Pedro - Criação e execução do código
 
-Gabriel - Criação e execução do código
+Gabriel Bandeira - Criação e execução do código
 
 Matheus - organizou o código no documento apresentativo para apresentação
 
