@@ -42,6 +42,7 @@ g++ -std=c++17 -Wall -Wextra -pedantic main.cpp -o mergesort_lista
 
 ## Execução
 Após compilar, execute:
+
 ./gerar_vetores
 
 e depois:
