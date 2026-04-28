@@ -85,3 +85,11 @@ A cada nível de recursão o problema é dividido ao meio, gerando log n níveis
 Como a ordenação é feita diretamente sobre a lista encadeada (ajuste de ponteiros), o algoritmo é uma excelente alternativa para estruturas lineares dinâmicas.
 
 ## Integrantes e Divisão de tarefas
+
+Adriano - Criação e execução do código 
+João Pedro - Criação e execução do código
+Gabriel - Criação e execução do código
+Matheus - organizou o código no documento apresentativo para apresentação
+Nathália - Representação visual da execução do algoritmo
+Hildebrando - Apresentação
+Gabriel Ferreira - Apresentação
