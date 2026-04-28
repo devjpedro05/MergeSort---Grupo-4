@@ -24,6 +24,18 @@ void generateDescendingArray(int arr[], int n) {
     }
 }
 
+// Função para gerar arrays quase ordenados
+void generateAlmostSortedArray(int arr[], int n) {
+    generateAscendingArray(arr, n);
+
+    // Faz poucas trocas aleatórias
+    for (int i = 0; i < n / 10; i++) {
+        int a = rand() % n;
+        int b = rand() % n;
+        std::swap(arr[a], arr[b]);
+    }
+}
+
 // Função para salvar um array em um arquivo
 void saveArrayToFile(const std::string& filename, int arr[], int n) {
     std::ofstream outfile(filename);  // Abre o arquivo para escrita
@@ -42,7 +54,7 @@ int main() {
     srand(time(0));  // Seed para números aleatórios
 
     // Tamanhos dos arrays
-    int sizes[] = {100, 1000, 10000, 100000};
+    int sizes[] = {10};
 
     // Para cada tamanho de array
     for (int s = 0; s < 4; s++) {
@@ -53,13 +65,13 @@ int main() {
         generateAscendingArray(arr, n);
         saveArrayToFile("melhor_caso_" + std::to_string(n) + ".txt", arr, n);
 
-        // Gerar e salvar o caso médio (array aleatório)
-        generateRandomArray(arr, n);
-        saveArrayToFile("medio_caso_" + std::to_string(n) + ".txt", arr, n);
-
         // Gerar e salvar o pior caso (array em ordem decrescente)
         generateDescendingArray(arr, n);
         saveArrayToFile("pior_caso_" + std::to_string(n) + ".txt", arr, n);
+
+        // Gerar e salvar o quase ordenado
+        generateAlmostSortedArray(arr, n);
+        saveArrayToFile("quase_ordenado_" + std::to_string(n) + ".txt", arr, n);
 
         delete[] arr;  // Libera a memória do array
     }
