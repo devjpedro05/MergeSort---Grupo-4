@@ -42,7 +42,8 @@ g++ -std=c++17 -Wall -Wextra -pedantic main.cpp -o mergesort_lista
 
 ## Execução
 Após compilar, execute:
-
+./gerar_vetores
+e depois:
 ./mergesort_lista
 
 O programa exibirá um menu com duas opções:
